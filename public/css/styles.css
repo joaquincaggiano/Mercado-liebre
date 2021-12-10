@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto"
+}
+
+/*header style*/
+
+
+.main-head {
+    background-color: #EAC926;
+    padding-bottom: 10px;
+}
+
+.main-head-top-bar {
+    padding: 20px;
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+}
+
+.logo-mercado {
+    width: 50%;
+    padding: 10px;
+}
+
+.header-form {
+    width: 50%;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header-form .input-search {
+    width: 90%;
+    border: #FFF;
+}
+
+.header-form i {
+    background-color: #FFF;
+    color: black;
+    width: 10%;
+    font-size: 15px;
+}
+
+.compra-text {
+    font-weight: 50;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main-head-bottom-bar {
+    display: none;
+}
+
+.main-head-bottom-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-head-bottom-bar a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.burger-menu {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    max-width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/*main style*/
+
+.banner {
+    width: 100%;
+}
+
+.main-container {
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+.product-container {
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+}
+
+.product-title {
+    font-size: 24px;
+    color: #666;
+    text-align: left;
+}
+
+.product-article {
+    margin-bottom: 10px;
+    background-color: white;
+    height: 380px;
+}
+
+.product-photo {
+    width: 100%;
+}
+
+.article-description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: solid 1px #ebebeb;
+    color: #39b54a;
+    padding: 15px;
+    text-align: left;
+}
+
+.article-description i {
+    display: block;
+    align-self: flex-end;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 30px;
+    position: relative;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.div-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.article-description .product-price {
+    font-size: 18px;
+    color: black;
+}
+
+.article-description .product-discount {
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.article-description .product-text {
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+
+/*media 768px*/
+
+@media(min-width: 768px) {
+
+    /*header*/
+
+    .main-head-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-div {
+        width: 60%;
+    }
+    .compra-text {
+        font-size: 20px;
+        max-width: 350px;
+        text-align: right;
+        width: 40%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .main-head-bottom-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .main-head-bottom-bar ul {
+        display: flex;
+        padding: 10px;
+    }
+
+    /*main*/
+    .cont-article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-article {
+        width: 45%;
+        margin: 10px 0;
+        height: 310px;
+    }
+
+    .product-article .product-text {
+        display: none;
+    }
+
+    .product-article:hover {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        height: 380px;
+    }
+
+    .product-article:hover i {
+        transform: rotate(0.75turn);
+    }
+
+    .product-article:hover .product-text {
+        display: block;
+    }
+
+}
+
+/*media 1200px*/
+
+@media(min-width: 1200px) {
+
+    /*header*/
+
+
+    .main-head-top-bar,
+    .main-head-bottom-bar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-head-top-bar {
+        align-items: center;
+    }
+
+    .compra-text {
+        max-width: none;
+    }
+
+    .logo-mercado {
+        width: 300px;
+    }
+
+    .main-head-bottom-bar li {
+        margin: 0 10px;
+    }
+
+    .main-head-bottom-bar a {
+        font-size: 19px;
+    }
+
+
+    /*main*/
+    .cont-article {
+        justify-content: space-between;
+    }
+
+    .product-article {
+        width: 20%;
+    }
+}
+
+/*footer style*/
+
+.main-footer section {
+    text-align: center;
+    margin: 3rem 3rem;
+  }
+  
+  .main-footer i {
+    color: #1259c3;
+    font-size: 2rem;
+  }
