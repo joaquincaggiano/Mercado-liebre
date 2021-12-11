@@ -148,7 +148,21 @@ label {
     color: white;
 }
 
+/*footer style*/
 
+.main-footer section {
+    text-align: center;
+    margin: 3rem 3rem;
+  }
+  
+.main-footer i {
+    color: #1259c3;
+    font-size: 2rem;
+  }
+
+.footer-container i:hover{
+    color: rgb(0, 0, 105);
+}
 
 @media(min-width: 768px) {
 
@@ -304,16 +318,13 @@ label {
    .div-password input {
        width: 300px;
    }
+
+   /* footer */
+   .footer-container {
+    display: flex;
+   }
+
+   .copyright {
+    text-align: left;
+   }
 }
-
-/*footer style*/
-
-.main-footer section {
-    text-align: center;
-    margin: 3rem 3rem;
-  }
-  
-  .main-footer i {
-    color: #1259c3;
-    font-size: 2rem;
-  }

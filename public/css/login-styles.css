@@ -85,9 +85,54 @@ body {
 }
 
 /* main */
+main {
+    background-color: #ebebeb;
+    padding:20px;
+}
+
+label {
+    display: none;
+}
+
+.login-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box input {
+    width: 80%;
+    padding: 4px;
+}
+
+.button-style {
+    width: 30%;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5%;
+}
+
 button:hover {
     background-color: #0022AA;
     color: white;
+}
+
+/*footer style*/
+
+.main-footer section {
+    text-align: center;
+    margin: 3rem 3rem;
+  }
+  
+  .main-footer i {
+    color: #1259c3;
+    font-size: 2rem;
+  }
+
+  .footer-container i:hover{
+    color: rgb(0, 0, 105);
 }
 
 @media(min-width: 768px) {
@@ -123,6 +168,16 @@ button:hover {
         display: flex;
         padding: 10px;
     }
+
+    /* main */
+
+    .login-box input {
+        width: 50%;
+    }
+
+    .button-style {
+        width: 16%;
+    }
 }
 
 /*media 1200px*/
@@ -157,16 +212,18 @@ button:hover {
     .main-head-bottom-bar a {
         font-size: 19px;
     }
+
+    /* main */
+    .button-style {
+        width: 30%;
+    }
+
+    /* footer */
+    .footer-container {
+        display: flex;
+    }
+
+    .copyright {
+        text-align: left;
+    }
 }
-
-/*footer style*/
-
-.main-footer section {
-    text-align: center;
-    margin: 3rem 3rem;
-  }
-  
-  .main-footer i {
-    color: #1259c3;
-    font-size: 2rem;
-  }

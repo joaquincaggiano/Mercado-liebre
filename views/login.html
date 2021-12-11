@@ -15,7 +15,7 @@ rel="stylesheet"/>
         <!--Logo e input-->
         <div class="main-head-top-bar">           
             <div class="logo-div">
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo-mercado">
+            <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo-mercado"></a>
             <form action="" class="header-form">
                 <input type="text" class="input-search" placeholder="Buscar productos, marcas"><i class="fas fa-search"></i>
             </form>
@@ -46,21 +46,26 @@ rel="stylesheet"/>
 
     <main>
         <form action="/" method="get">
+           <div class="login-box">
             <label for="user">Nombre de usuario</label>
-            <input type="text" name="user" id="user">
+            <input type="text" name="user" id="user" placeholder="Nombre de usuario">
 
             <br>
 
             <label for="password">Contraseña</label>
-            <input type="password" name="password" id="password">
-
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+            
             <br>
 
-            <button type="submit">Ingresar</button>
+            <button class="button-style" type="submit">Ingresar</button>
+           </div> 
+
+            
         </form>
     </main>
 
     <footer class="main-footer">
+      <div class="footer-container">
         <section>
             <i class="fas fa-credit-card"></i>
             <h3>Pagá con tarjeta o en efectivo</h3>
@@ -76,9 +81,10 @@ rel="stylesheet"/>
             <h3>Seguridad, de principio a fin</h3>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
         </section>
-        <section>
-            <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
-        </section>
+      </div>
+      <section>
+        <h3 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+      </section>
     </footer>
 </body>
 </html>
