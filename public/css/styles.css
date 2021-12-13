@@ -14,6 +14,10 @@ body {
 .main-head {
     background-color: #EAC926;
     padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .main-head-top-bar {
@@ -88,6 +92,7 @@ body {
 
 .banner {
     width: 100%;
+    margin-top: 185px;
 }
 
 .main-container {
@@ -111,6 +116,7 @@ body {
     margin-bottom: 10px;
     background-color: white;
     height: 380px;
+    box-shadow: 0 0 10px rgb(100, 100, 100);
 }
 
 .product-photo {
@@ -219,6 +225,10 @@ body {
     }
 
     /*main*/
+    .banner {
+        margin-top: 200px;
+    }
+    
     .cont-article {
         display: flex;
         flex-direction: row;
@@ -230,6 +240,7 @@ body {
         width: 45%;
         margin: 10px 0;
         height: 310px;
+        box-shadow: 0 0 0 rgb(0, 0, 0);
     }
 
     .product-article .product-text {
