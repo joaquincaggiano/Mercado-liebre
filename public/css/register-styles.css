@@ -203,6 +203,7 @@ label {
     .h2-main {
         position: relative;
         left: 120px;
+        width:50%
     }
 
     .input-container input {
