@@ -30,12 +30,12 @@ body {
 }
 
 .logo-mercado {
-    width: 50%;
+    width: 80%;
     padding: 10px;
 }
 
 .header-form {
-    width: 50%;
+    width: 60%;
     background-color: #FFF;
     padding: 10px;
     border-radius: 5px;
@@ -67,6 +67,10 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.main-head-bottom-bar ul li {
+    margin: 0px 5px;
 }
 
 .main-head-bottom-bar a {

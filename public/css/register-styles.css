@@ -22,6 +22,10 @@ body {
 
 .main-head-top-bar {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .logo-div {
@@ -29,8 +33,12 @@ body {
     align-items: center;
 }
 
+.main-head-bottom-bar ul li {
+    margin: 0px 5px;
+}
+
 .logo-mercado {
-    width: 50%;
+    width: 70%;
     padding: 10px;
 }
 
